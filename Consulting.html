@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+    <title>LIZEZ</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="css/default.css" rel="stylesheet" />
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/sideBar.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="script/jquery-3.3.1.min.js"></script>
+    <script src="script/Script.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="canvas">
+            <div id="nav">
+                <div id="title">
+                    CONSOLE
+                    <img src="assets/nav-icons/sidebar/close.png" id="closeSideBar" />
+                </div>
+                <ul id="toggle">
+                    <li>
+                        <div class="active border">
+                            <a href="#">
+                                <img src="assets/nav-icons/sidebar/arrow_left.png" class="sidebar-icon" style="top: 3px" />
+                                LEASEHOLDER MODE
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="">
+                            <a href="#">
+                                <img src="assets/nav-icons/sidebar/settings.png" class="sidebar-icon" />
+                                SETTINGS
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="">
+                            <a href="#">
+                                <img src="assets/nav-icons/sidebar/message_three_points.png" class="sidebar-icon" />
+                                CONTACT US
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="">
+                            <a href="#">
+                                <img src="assets/nav-icons/sidebar/important_message.png" class="sidebar-icon" />
+                                ABOUT US
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="">
+                            <a href="#">
+                                <img src="assets/nav-icons/sidebar/question.png" class="sidebar-icon" />
+                                HELP
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <a href="index.html"><button class="sign-out-btn">LOGOUT</button></a>
+            </div>
+
+            <div class="top">
+                <div class="logo">
+                    <div class="top-burger">
+                        <!--<img src="assets/nav-icons/normal/Hamburger.png" class="icon" />-->
+                        <a href="#" class="toggle-nav" id="bars"><i class="fa fa-bars"></i></a>
+                    </div>
+                    <div class="top-logo">Consulting</div>
+                    <div class="top-user">
+                        <img src="assets/nav-icons/normal/profile.png" class="icon" />
+                    </div>
+                </div>
+            </div>
+
+            <nav class="mobile-bottom-nav">
+                <div class="mobile-bottom-nav__item mobile-bottom-nav__item--active" id="Cars">
+                    <div class="mobile-bottom-nav__item-content">
+                        <span>
+                            <img src="assets/nav-icons/hover/car_front_view.png" class="icon" />
+                        </span>
+                        <span>Inventory</span>
+                    </div>
+                </div>
+                <div class="mobile-bottom-nav__item" id="Chatroom">
+                    <div class="mobile-bottom-nav__item-content">
+                        <span>
+                            <img src="assets/nav-icons/hover/message.png" class="icon" />
+                        </span>
+                        <span>Message</span>
+                    </div>
+                </div>
+                <!--<div class="mobile-bottom-nav__item">
+            <div class="mobile-bottom-nav__item-addbtn">
+                <img src="assets/nav-icons/normal/plus_mini.png" class="icon" />
+            </div>
+        </div>-->
+                <div class="mobile-bottom-nav__item" id="Consulting">
+                    <div class="mobile-bottom-nav__item-content">
+                        <span>
+                            <img src="assets/nav-icons/normal/tie_round.png" class="icon" />
+                        </span>
+                        <span>Consulting</span>
+                    </div>
+                </div>
+
+                <div class="mobile-bottom-nav__item" id="Guidline">
+                    <div class="mobile-bottom-nav__item-content">
+                        <span>
+                            <img src="assets/nav-icons/hover/book.png" class="icon" />
+                        </span>
+                        <span>Guideline</span>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="filter-div">
+                <div id="filter-trigger" onclick="showFilter()">
+                    <img src="assets/settings.png" class="icon" />
+                    Filter
+                </div>
+                <div id="filter-detail">
+                    <div class="filter-item">
+                        <input class="filter-item-input" />
+                        <span>LOCATION</span>
+                    </div>
+                    <div class="filter-item">
+                        <input class="filter-item-input" />
+                        <span>RATING</span>
+                    </div>
+                    <div class="filter-item">
+                        <input class="filter-item-input" />
+                        <span>TYPE</span>
+                    </div>
+                    <div class="filter-btn-div">
+                        <button class="button-white" onclick="HideFilter()">CLOSE</button>
+                        <button class="button-grey" onclick="ShowSearchResult()">SEARCH</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="body-div chat-list-div">
+                <div class="sub-filter">
+                    Sort By
+                    <select name="SortBy">
+                        <option>Distance close to far</option>
+                    </select>
+                </div>
+
+                <div class="div-rect consultant" style="height: 94px">
+                    <div class="div-img"  style="background-image: url('assets/imgs/consulting/1.jpg')">
+                        <img src="assets/imgs/consulting/1.jpg" style="visibility: hidden"/>
+                    </div>
+                    <div class="div-content">
+                        <div class="div-content-title">John Smith</div>
+                        <div class="div-content-subtitle">
+                            Professional Vehicle Leasing Expert
+                        </div>
+                        <div class="div-content-items">
+                            12 Cases Taken<br />
+                            2 Cases in Process
+                        </div>
+                        <div class="div-content-rate">
+                            Overall Rating:
+                            <img class="star-icon" src="assets/nav-icons/normal/star_favorite.png" />
+                            <img class="star-icon" src="assets/nav-icons/normal/star_favorite.png" />
+                            <img class="star-icon" src="assets/nav-icons/normal/star_favorite.png" />
+                            <img class="star-icon" src="assets/nav-icons/normal/star_favorite.png" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="div-rect consultant" style="height: 94px">
+                    <div class="div-img" style="background-image: url('assets/imgs/consulting/2.jpg')">
+                        <img src="assets/imgs/consulting/2.jpg" style="visibility: hidden"/>
+                    </div>
+                    <div class="div-content">
+                        <div class="div-content-title">Steve Hudak</div>
+                        <div class="div-content-subtitle">
+                            Professional Vehicle Leasing Expert
+                        </div>
+                        <div class="div-content-items">
+                            12 Cases Taken<br />
+                            2 Cases in Process
+                        </div>
+                        <div class="div-content-rate">
+                            Overall Rating:
+                            <img class="star-icon" src="assets/nav-icons/normal/star_favorite.png" />
+                            <img class="star-icon" src="assets/nav-icons/normal/star_favorite.png" />
+                            <img class="star-icon" src="assets/nav-icons/normal/star_favorite.png" />
+                            <img class="star-icon" src="assets/nav-icons/normal/star_favorite.png" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="div-rect consultant" style="height: 94px">
+                    <div class="div-img"  style="background-image: url('assets/imgs/consulting/3.jpg')">
+                        <img src="assets/imgs/consulting/3.jpg" style="visibility: hidden"/>
+                    </div>
+                    <div class="div-content">
+                        <div class="div-content-title">Micheal Williams</div>
+                        <div class="div-content-subtitle">
+                            Professional Vehicle Leasing Expert
+                        </div>
+                        <div class="div-content-items">
+                            12 Cases Taken<br />
+                            2 Cases in Process
+                        </div>
+                        <div class="div-content-rate">
+                            Overall Rating:
+                            <img class="star-icon" src="assets/nav-icons/normal/star_favorite.png" />
+                            <img class="star-icon" src="assets/nav-icons/normal/star_favorite.png" />
+                            <img class="star-icon" src="assets/nav-icons/normal/star_favorite.png" />
+                            <img class="star-icon" src="assets/nav-icons/normal/star_favorite.png" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="div-rect consultant" style="height: 94px">
+                    <div class="div-img" style="background-image: url('assets/imgs/consulting/4.jpg')">
+                        <img src="assets/imgs/consulting/4.jpg" style="visibility: hidden"/>
+                    </div>
+                    <div class="div-content">
+                        <div class="div-content-title">Bob Doe</div>
+                        <div class="div-content-subtitle">
+                            Professional Vehicle Leasing Expert
+                        </div>
+                        <div class="div-content-items">
+                            12 Cases Taken<br />
+                            2 Cases in Process
+                        </div>
+                        <div class="div-content-rate">
+                            Overall Rating:
+                            <img class="star-icon" src="assets/nav-icons/normal/star_favorite.png" />
+                            <img class="star-icon" src="assets/nav-icons/normal/star_favorite.png" />
+                            <img class="star-icon" src="assets/nav-icons/normal/star_favorite.png" />
+                            <img class="star-icon" src="assets/nav-icons/normal/star_favorite.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

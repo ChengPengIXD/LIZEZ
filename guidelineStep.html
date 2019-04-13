@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+    <title>LIZEZ</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="script/jquery-3.3.1.min.js"></script>
+    <script src="script/Script.js"></script>
+</head>
+<body>
+    <div class="top">
+        <div class="logo">
+            <div class="top-burger">
+                <a class="goToGuideLineDetail">
+                    <img src="assets/nav-icons/normal/arrow_left.png" style="width: 20px;" onclick='javascript:history.go(-1)' />
+                </a>
+            </div>
+            <div class="top-logo">Guideline</div>
+            <div class="top-user">
+                <img src="assets/nav-icons/normal/profile.png" class="icon" />
+            </div>
+        </div>
+    </div>
+
+    <nav class="mobile-bottom-nav">
+        <div class="mobile-bottom-nav__item" style="width: 50%">
+            <div class="mobile-bottom-nav__item-content">
+                <!--<button class="button-bottom">Make Appointment</button>-->
+            </div>
+        </div>
+
+        <div class="mobile-bottom-nav__item" style="width: 50%">
+            <div class="mobile-bottom-nav__item-content">
+                <button class="button-bottom goToMessage" style="padding: 0px -10px;">Contact Owner</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="guideline-fixed-car-div">
+        <div class="car-list-div">
+            <div class="div-rect">
+                <div class="div-img">
+                    <img src="assets/imgs/e200.jpg" />
+                </div>
+                <div class="div-content">
+                    <div class="div-content-title">2016 MercB E200/220</div>
+                    <div class="div-content-tag">Certified</div>
+                    <div class="div-content-subtitle">
+                        <div>
+                            <span class="text">Monthly</span>
+                            <span class="number">$599</span>
+                        </div>
+                        <div>
+                            <span class="text">DP</span>
+                            <span class="number">$5,000</span>
+                        </div>
+                    </div>
+                    <div class="div-content-items">
+                        <div class="name">Remining Terms:</div>
+                        <div class="text">2019.09/20M</div>
+                    </div>
+                    <div class="div-content-items">
+                        <div class="name">Remining KMs:</div>
+                        <div class="text">45,000</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hint">
+            <span class="car-name">Mercedez-Benz</span>
+            <span class="stage">Lease Transferring Process</span>
+        </div>
+    </div>
+    <div class="step-detail-wrapper">
+        <div class="title">
+            Step 2
+        </div>
+        <div class="content">
+            Making the appointment with the Mercedez-benz Dearlership for the credit check
+        </div>
+        <div class="title">
+            Document Prepareration
+        </div>
+        <div class="content">
+            <input type="checkbox" id="doc1" />
+            <label for="doc1">Valid Driver’s Liscense</label><br />
+
+            <input type="checkbox" id="doc2" />
+            <label for="doc2">Your Name, Address</label><br />
+
+            <input type="checkbox" id="doc3" />
+            <label for="doc3">Your company name (if have)</label><br />
+
+            <input type="checkbox" id="doc4" />
+            <label for="doc4">Your income information (if have)</label>
+        </div>
+        <div class="title">
+            Appointment
+        </div>
+        <div class="content">
+            <div>
+                <span>
+                    Name
+                </span>
+                <input type="text" placeholder="Input Here" class="full-width"/>
+            </div>
+
+            <div>
+                <span>
+                    Phone Number
+                </span>
+                <input type="tel" placeholder="Input Here" class="full-width" />
+            </div>
+
+            <div>
+                <span>
+                    Email Address
+                </span>
+                <input type="email" placeholder="Input Here" class="full-width" />
+            </div>
+
+            <div>
+                <span>
+                    Date & Time
+                </span>
+                <div>
+                    <input type="number" placeholder="Month" />
+                    <input type="number" placeholder="Day" />
+                    <span>,</span>
+                    <input type="number" placeholder="Hour" />
+                    <span>:</span>
+                    <input type="number" placeholder="Min" />
+                </div>
+            </div>
+
+            <div>
+                <span>
+                    Address
+                </span>
+                <!--<input type="text" placeholder="Input Here" class="full-width" />-->
+                <select>
+                    <option value="1">228 Steeles Ave W, Thornhill, ON L4J 1A1</option>
+                    <option value="2">761 Dundas St E, Toronto, ON M5A 4N5</option>
+                    <option value="3">6120 Mavis Rd, Mississauga, ON L5V 2X4</option>
+                    <option value="4">441 N Service Rd, Burlington, ON L7P 0A3</option>
+                </select>
+            </div>
+        </div>
+
+        <div style="text-align: right; margin-top: 30px">
+            <button class="button-bottom" style="margin: 0; width: 45.5%;">
+                Submit
+            </button>
+
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+    <title>LIZEZ</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="css/default.css" rel="stylesheet" />
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/sideBar.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="script/jquery-3.3.1.min.js"></script>
+    <script src="script/Script.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="canvas">
+            <div id="nav">
+                <div id="title">
+                    CONSOLE
+                    <img src="assets/nav-icons/sidebar/close.png" id="closeSideBar" />
+                </div>
+                <ul id="toggle">
+                    <li>
+                        <div class="active border">
+                            <a href="#">
+                                <img src="assets/nav-icons/sidebar/arrow_left.png" class="sidebar-icon" style="top: 3px" />
+                                LEASEHOLDER MODE
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="">
+                            <a href="#">
+                                <img src="assets/nav-icons/sidebar/settings.png" class="sidebar-icon" />
+                                SETTINGS
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="">
+                            <a href="#">
+                                <img src="assets/nav-icons/sidebar/message_three_points.png" class="sidebar-icon" />
+                                CONTACT US
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="">
+                            <a href="#">
+                                <img src="assets/nav-icons/sidebar/important_message.png" class="sidebar-icon" />
+                                ABOUT US
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="">
+                            <a href="#">
+                                <img src="assets/nav-icons/sidebar/question.png" class="sidebar-icon" />
+                                HELP
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                 <a href="index.html"><button class="sign-out-btn">LOGOUT</button></a>
+            </div>
+
+            <div class="top">
+                <div class="logo">
+                    <div class="top-burger">
+                        <!--<img src="assets/nav-icons/normal/Hamburger.png" class="icon" />-->
+                        <a href="#" class="toggle-nav" id="bars"><i class="fa fa-bars"></i></a>
+                    </div>
+                    <div class="top-logo">Guideline</div>
+                    <div class="top-user">
+                        <img src="assets/nav-icons/normal/profile.png" class="icon" />
+                    </div>
+                </div>
+            </div>
+
+            <nav class="mobile-bottom-nav">
+                <div class="mobile-bottom-nav__item mobile-bottom-nav__item--active" id="Cars">
+                    <div class="mobile-bottom-nav__item-content">
+                        <span>
+                            <img src="assets/nav-icons/hover/car_front_view.png" class="icon" />
+                        </span>
+                        <span>Inventory</span>
+                    </div>
+                </div>
+                <div class="mobile-bottom-nav__item" id="Chatroom">
+                    <div class="mobile-bottom-nav__item-content">
+                        <span>
+                            <img src="assets/nav-icons/hover/message.png" class="icon" />
+                        </span>
+                        <span>Message</span>
+                    </div>
+                </div>
+                <!--<div class="mobile-bottom-nav__item">
+            <div class="mobile-bottom-nav__item-addbtn">
+                <img src="assets/nav-icons/normal/plus_mini.png" class="icon" />
+            </div>
+        </div>-->
+                <div class="mobile-bottom-nav__item" id="Consulting">
+                    <div class="mobile-bottom-nav__item-content">
+                        <span>
+                            <img src="assets/nav-icons/hover/tie_round.png" class="icon" />
+                        </span>
+                        <span>Consulting</span>
+                    </div>
+                </div>
+
+                <div class="mobile-bottom-nav__item" id="Guidline">
+                    <div class="mobile-bottom-nav__item-content">
+                        <span>
+                            <img src="assets/nav-icons/normal/book.png" class="icon" />
+                        </span>
+                        <span>Guideline</span>
+                    </div>
+                </div>
+            </nav>
+            <div class="car-list-div">
+                <div class="category-title">Your Vehicle</div>
+                <div class="div-rect goToGuideLineDetail">
+                    <div class="div-img">
+                        <img src="assets/imgs/e200.jpg" />
+                    </div>
+                    <div class="div-content">
+                        <div class="div-content-title">2016 MercB E200/220</div>
+                        <div class="div-content-tag">Certified</div>
+                        <div class="div-content-subtitle">
+                            <div>
+                                <span class="text">Monthly</span>
+                                <span class="number">$599</span>
+                            </div>
+                            <div>
+                                <span class="text">DP</span>
+                                <span class="number">$5,000</span>
+                            </div>
+                        </div>
+                        <div class="div-content-items">
+                            <div class="name">Remining Terms:</div>
+                            <div class="text">2019.09/20M</div>
+                        </div>
+                        <div class="div-content-items">
+                            <div class="name">Remining KMs:</div>
+                            <div class="text">45,000</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-title">Your Take-over</div>
+
+                <div class="div-rect goToGuideLineDetail">
+                    <div class="div-img">
+                        <img src="assets/imgs/e200.jpg" />
+                    </div>
+                    <div class="div-content">
+                        <div class="div-content-title">2016 MercB E200/220</div>
+                        <div class="div-content-tag">Certified</div>
+                        <div class="div-content-subtitle">
+                            <div>
+                                <span class="text">Monthly</span>
+                                <span class="number">$599</span>
+                            </div>
+                            <div>
+                                <span class="text">DP</span>
+                                <span class="number">$5,000</span>
+                            </div>
+                        </div>
+                        <div class="div-content-items">
+                            <div class="name">Remining Terms:</div>
+                            <div class="text">2019.09/20M</div>
+                        </div>
+                        <div class="div-content-items">
+                            <div class="name">Remining KMs:</div>
+                            <div class="text">45,000</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
